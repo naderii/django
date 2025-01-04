@@ -54,6 +54,7 @@ python manage.py createsuperuser     # ایجاد کاربر ادمین
 ```
 ## کار با مدل‌ها در شل جنگو
 ```sh
+pip install ipython
 python manage.py shell               # ورود به محیط شل
 ```
 ## از داخل شل اجرا کنید:
