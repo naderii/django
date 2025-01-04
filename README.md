@@ -1,14 +1,17 @@
 # نصب و راه‌اندازی پروژه
+,,,sh
 pip install django                   # نصب جنگو
 django-admin startproject myProj .   # ایجاد پروژه جنگو
 python manage.py runserver           # اجرای سرور توسعه
-
+,,,
+,,,sh
 # ایجاد اپلیکیشن‌ها
 python manage.py startapp posts      # ایجاد اپلیکیشن posts
 python manage.py startapp profiles   # ایجاد اپلیکیشن profiles
-
+,,
 # تنظیم مسیرها (URLs)
 # در فایل urls.py اضافه کنید:
+
 # from posts.views import index, home
 # urlpatterns = [ path('index/', index), path('home/', home) ]
 
@@ -36,15 +39,19 @@ python manage.py startapp profiles   # ایجاد اپلیکیشن profiles
 # admin.site.register(Comment, CommentAdmin)
 
 # مدیریت پایگاه داده
+,,,sh
 python manage.py makemigrations      # ایجاد فایل‌های مهاجرت
 python manage.py migrate             # اعمال مهاجرت‌ها
 python manage.py showmigrations      # نمایش وضعیت مهاجرت‌ها
-
+,,,
 # ایجاد کاربر مدیر
+,,,sh
 python manage.py createsuperuser     # ایجاد کاربر ادمین
-
+,,
 # کار با مدل‌ها در شل جنگو
+,,,sh
 python manage.py shell               # ورود به محیط شل
+,,,
 # از داخل شل اجرا کنید:
 # from posts.models import Post
 # Post.objects.create(title="hi django")
